@@ -31,10 +31,14 @@ function ValidateForm(){
             validForm = false;
         } 
     }
+    var rbl = document.getElementsByName("rblPets");
+    if (!rbl.item(0).checked || !rbl.item(1).checked){
+        validForm = false;
+    }
+
     if (validForm === false) {
         //alert("* Please fill out all required fields before submitting the form.");
         document.getElementById("UserMsg").textContent = "* Please fill out all required fields before submitting the form.";
-        return false;
     }
     else {
         document.getElementById("UserMsg").textContent = "Thank you " + document.getElementById("txtFName").value + "," + " your form has been submitted succesfully!";
