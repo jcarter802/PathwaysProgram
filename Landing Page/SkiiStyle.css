@@ -1,0 +1,49 @@
+.flexRow {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.flexColumn {
+  width: 100%;
+  flex: 50%;
+  text-align: center;
+  height: 10%;
+}
+
+.mediaObject {
+  max-width: 90%;
+  max-height: 50%;
+}
+
+.linkDiv {
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
+label, a {
+  font-size: large;
+}
+
+@media screen and (max-width: 992px) {
+  .flexColumn {
+    flex: 100%;
+    height: fit-content;
+    
+  text-align: left;
+  }
+
+  label, a {
+    font-size: larger;
+    text-align: left;
+  }
+
+  h1 {
+    text-align: left;
+  }
+}
