@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <title>List Builder</title>
+    <head>
+        <link rel="stylesheet" href="Style.css" >
+        <script src="ListBuilder.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ski Term Or Nonsense?</h2>
+            <hr>
+    <!-- The user should enter a value in at least one text field in a form.
+        The user is allowed to enter a word and an integer that indicates which of two lists the word will appear in.
+        Validate that a word is entered, and that a 1 or 2 is entered correctly.  If not, provide appropriate feedback to the user.
+        Once validated, the entered word must appear to the user in the correct list.
+        The user should have the option to clear each list.-->
+            <div class="formGroupOne formDiv">
+                <form onsubmit="ValidateForm()" >
+                    <label for="txtWordTerm" >Enter A Word:</label>
+                    <input type="text" id="txtWordTerm" name="RequiredField" >
+                    <br>
+                    <br>
+                    <label >Which List Does This Word Belong To?<a class="ReqStyle"></label>            
+                    <label><input type="radio" id="rbSkiTerm" name="rblListOptions" >&nbsp; Ski Terms</label>
+                    <label><input type="radio" id="rbNonsenseWord" name="rblListOptions" >&nbsp; Nonsense Words</label>
+                    <br>
+                    <input type="button" value="Submit" class="submit-button" onclick="ValidateForm()" >
+                </form>
+            </div>
+            <div class="listsDiv">
+                <div class="formGroupTwo">
+                    <form>
+                        <label for="skiTerms" >Ski Terms:</label>
+                        <textarea disabled id="skiTerms"></textarea>
+                        <br>
+                        <br>
+                        <input type="button" value="Clear" class="clear-button" onclick="ClearList('S')" >
+                    </form>
+                </div>
+                <div class="formGroupTwo">
+                    <form>
+                        <label for="nonsenseWords" >Nonsense Words:</label>
+                        <textarea disabled id="nonsenseWords"></textarea>
+                        <br>
+                        <br>
+                        <input type="button" value="Clear" class="clear-button" onclick="ClearList('N')" >
+                    </form>
+                </div>
+            </div>            
+            <br style="clear:both">
+            <hr>        
+            <a id="UserMsg" class="ReqStyle"></a>    
+            <br>
+        </div>
+    </body>
+</html>

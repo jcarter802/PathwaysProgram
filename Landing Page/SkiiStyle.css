@@ -34,8 +34,7 @@ label, a {
   .flexColumn {
     flex: 100%;
     height: fit-content;
-    
-  text-align: left;
+    text-align: left;
   }
 
   label, a {
