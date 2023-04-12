@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <title>Palindrominator</title>
+    <head>
+        <link rel="stylesheet" href="Style.css" >
+        <script src="Palindrome.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Palindrominator</h2>
+            <hr>
+    <!-- The program will check for a user to see if a word entered is a palindrome using one of two algorithms.  The algorithms used are your choice.  One you must come up with on your own, and the other you can find on the internet and adapt.
+        A form must be provided allowing the user to enter a word and an integer that indicates which of two algorithms will be used.
+        Validate that a word is entered, and that a 1 or 2 is entered correctly.  If not, provide appropriate feedback.
+        The result of whether or not a word is a palindrome must be clearly provided to the user in one of two lists based on the algorithm used.
+        The user is able to clear either list.-->
+            <div class="formGroupOne">
+                <form onsubmit="ValidateForm()" >
+                    <label for="txtWord" >Enter A Word:</label>
+                    <input type="text" id="txtWord" name="RequiredField" >
+                    <br>
+                    <br>
+                    <label >Which Method Do You Want To Use?<a class="ReqStyle"></a></label>            
+                    <label><input type="radio" id="rbPalindrominatorOne" name="rblListOptions" >&nbsp; Heinz</label>
+                    <label><input type="radio" id="rbPalindrominatorTwo" name="rblListOptions" >&nbsp; Flynn</label>
+                    <br>
+                    <input type="button" value="Check" class="submit-button" onclick="ValidateForm()" >
+                </form>
+            </div>
+            <div class="listsDiv">
+                <div class="formGroupTwo">
+                    <label for="txtHeinz" >Heinz Palindrominator:</label>
+                    <textarea disabled id="txtHeinz"></textarea>
+                    <br>
+                    <input type="button" value="Clear" class="clear-button" onclick="ClearList('H')" >  
+                    <br>                  
+                </div>
+                <br style="clear:both">
+                <div class="formGroupTwo">
+                    <label for="txtFlynn" >Flynn Palindrominator:</label>
+                    <textarea disabled id="txtFlynn"></textarea>
+                    <br>
+                    <input type="button" value="Clear" class="clear-button" onclick="ClearList('F')" >
+                </div>
+            </div>            
+            <br style="clear:both">
+            <hr>        
+            <a id="UserMsg" class="ReqStyle"></a>    
+            <br>
+        </div>
+    </body>
+</html>
