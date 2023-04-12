@@ -37,7 +37,7 @@ function VerifyPalindromes(){
 function Palindrominator(word){
     let Palindrome = true
     let letterArray = word.split("");
-    for (var i = 0; i < word.length; i++){
+    for (var i = 0; i < word.length/2; i++){
         if (letterArray[i] != letterArray[word.length-i-1]){
             Palindrome = false;
         }
