@@ -1,7 +1,7 @@
 function ValidateForm(){
     var rbl = document.getElementsByName("rblListOptions");
     if (document.getElementById("txtWord").length === 0 || (!rbl.item(0).checked && !rbl.item(1).checked)){
-        document.getElementById("UserMsg").textContent = "* Please enter a term/word and select the method to verify it with.";
+        document.getElementById("UserMsg").textContent = "* Please enter a word and select the method to verify it with.";
     }
     else {
         VerifyPalindromes();
