@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <title>Calculator</title>
+    <head>
+        <link rel="stylesheet" href="Style.css" >
+        <script src="Calculator.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Calculator</h2>
+            <hr>
+            <!-- The program will calculate and display the mean, median and mode of a list of integers entered by the user.
+            A form must be provided allowing the user to enter an integer within a certain range that is also entered by the user.
+            Validate that appropriate values for the range and the integer are entered.  If not, provide appropriate feedback.
+            Once a valid integer within the range is entered, display the integer in the list of entered integers, and calculate and display the mean, median and mode of the list.
+            The user is able to clear all values. -->
+            <div class="formGroupOne">
+                <form onsubmit="ValidateForm()" >
+                    <label for="txtWord" >Enter a minimum value:</label>
+                    <input type="number" id="txtMinimum" name="RequiredField" max="999" onblur="UpdateRange('min')" >
+                    <br>
+                    <br>
+                    <label for="txtMaximum" >Enter a maximum value:</label>
+                    <input type="number" id="txtMaximum" name="RequiredField" max="999" onblur="UpdateRange('max')" >
+                    <br>
+                    <br>
+                    <label for="txtNewValue" >Enter a number within the range:</label>
+                    <input type="number" id="txtNewValue" name="RequiredField" max="999" >
+                    <br>
+                    <br>
+                    <input type="button" value="Add" class="submit-button" onclick="UpdateList()" >
+                </form>
+            </div>
+            <div class="listsDiv">
+                <label>Numbers entered so far:</label>
+                <table id="numberList">
+                </table>   
+                <input type="button" value="Clear" class="clear-button" onclick="ClearList()" >       
+            </div>               
+            <br style="clear:both">
+            <hr>        
+            <a id="UserMsg" class="ReqStyle"></a>       
+            <br>
+            <br>
+            <div class="listsDiv">
+                <label>Calculations:</label>    
+                <br>
+                <label>Mean:&nbsp;<label id="lblMean"></label> </label>                  
+                <br>
+                <label>Median:&nbsp;<label id="lblMedian"></label> </label>                  
+                <br>
+                <label>Mode:&nbsp;<label id="lblMode"></label></label>
+                
+            </div>    
+            <br>
+        </div>
+    </body>
+</html>
