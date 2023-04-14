@@ -1,0 +1,59 @@
+.formGroupOne {
+  width: 100%;
+  /* float: left; */
+  margin-left: 5%;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.sectionLbls {  
+  color:green;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.delete {
+  color: red;
+  border: solid;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  width: 1.2rem;
+}
+
+input[type=checkbox] {
+  /* margin:5px; */
+  height: 15px;
+  width: 15px;
+  position: relative;
+  padding-right: 3px;
+  top: 0.18rem;
+}
+
+.complete-button  {
+  background-color: lightgreen;
+}
+
+.delete-button {
+  background-color: red;
+}
+
+input[type=button] {
+  color: black;
+  /* padding: 0.75rem; */
+  border-radius: 5px;
+  border-style:solid;
+  cursor: pointer;
+}
+
+.completeLbl {
+  color: green;
+}
+
+.ReqStyle {
+  color: red;
+  font-weight: bold;
+}

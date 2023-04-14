@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <title>To-Do List</title>
+    <head>
+        <link rel="stylesheet" href="Style.css" >
+        <script src="src/ToDo.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>To-Do List</h2>
+            <hr>
+            <!-- The user will be able to add an item to the to-do list and see the updated list.
+            The user will be able to remove an item from the to-do list and see the updated list.
+            The user will be able to clear all items from the list and see the updated list.
+            Optional: The user will be able to mark an item as complete.
+            Optional: The user will be able to save and retrieve the list from a local file. -->
+            <div class="formGroupOne">
+                <form onsubmit="UpdateList()">
+                    <label class="sectionLbls" for="txtToDo" >New To-Do Item:</label>
+                    <input type="text" id="txtToDo" >
+                    <input type="button" value="Add" class="submit-button" onclick="UpdateList()" >     
+                </form>        
+            </div>
+            <br>
+            <br>
+            <div class="formGroupOne">
+                <label class="sectionLbls">To-Do List:</label>
+                <input type="button" value="Clear" class="clear-button" onclick="ClearList()" >     
+                <input type="button" value="Complete" class="complete-button" onclick="CompleteItems()" >    
+                <input type="button" value="Delete" class="delete-button" onclick="DeleteItems()" >    
+                <ul id="olToDo">
+                </ul>  
+            </div>               
+            <hr>        
+            <a id="UserMsg" class="ReqStyle"></a> 
+            <br>
+        </div>
+    </body>
+</html>
