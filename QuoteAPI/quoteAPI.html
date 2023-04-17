@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <title>Random Quote Selector</title>
+    <head>
+        <link rel="stylesheet" href="Style.css" >
+        <script src="quoteAPI.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Random Quote Selector</h2>
+            <hr>
+            <!-- The program must use an API call to Random Quote Generator to get a random quote of the length specified by the user.
+                The quote and author returned must be displayed to the user.. -->
+            <div>
+                <form onsubmit="RequestQuote()" >
+                    <label for="ddlLength" >Length of quote:</label>
+                    <select id="ddlLength">
+                        <option value="s">Short</option>
+                        <option value="m">Medium</option>
+                        <option value="l">Long</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="button" value="Get Quote" class="submit-button" onclick="RequestQuote()" >
+                </form>
+            </div>
+            <hr>
+            <div>
+                <label id="quoteText"></label>
+                <label id="quoteAuthor"></label>     
+            </div>     
+            <br style="clear:both">          
+            <hr>
+        </div>
+    </body>
+</html>
