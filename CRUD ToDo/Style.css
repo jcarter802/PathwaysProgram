@@ -57,3 +57,7 @@ input[type=button] {
   color: red;
   font-weight: bold;
 }
+
+.completedItem {
+  color: darkgrey;
+}
