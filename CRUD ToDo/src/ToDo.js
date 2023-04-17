@@ -17,6 +17,7 @@ function UpdateList(UncompleteItem) {
     //     toDoList.appendChild(addItem);
     //     arguments.callee();// UpdateList();
     // }
+    addLabel.id = 'cbli' + String(toDoList.childElementCount);
     addLabel.appendChild(addCheckbox);
     if (UncompleteItem != '') {
         addLabel.appendChild(document.createTextNode(UncompleteItem));
@@ -58,7 +59,8 @@ function CompleteItems() {
             addCheckbox.setAttribute("onclick", "javascript: UncompleteItem();");
             addLabelComplete.className = 'completedItem';
             addLabelComplete.appendChild(addCheckbox);
-            addLabelComplete.appendChild(document.createTextNode(toDoList_1.children[i].children[0].textContent));
+            var originalLabel = document.getElementById('cbli' + i);
+            addLabelComplete.appendChild(document.createTextNode(originalLabel.textContent));
             addItem.appendChild(addLabelComplete);
             toDoList_1.appendChild(addItem);
             DeleteItems();
