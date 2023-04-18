@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <title>GitHub User Repo Search</title>
+    <head>
+        <link rel="stylesheet" href="Style.css" >
+        <script src="GitHubAPI.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>GitHub User Repo Search</h2>
+            <hr>
+            <!-- The user is allowed to enter a Github id.
+                The user has a button that when clicked will build an API call to get the Github account specified by the user.
+                From the raw JSON file returned, display a list of all the repos for that account to the user.
+                Allow the user to select one of the repos in the list to get additional information about that repo.
+                If the account doesn't exist, indicate that to the user. -->
+            <div>
+                <form onsubmit="GetUserDetails()" >
+                    <label for="txtUser" >GitHub ID:</label>
+                    <input type="text" id="txtUser">
+                    <input type="button" value="List Repos" class="submit-button" onclick="GetUserDetails()" >
+                </form>
+            </div>
+            <hr>
+            <div>
+                <h4 id="userLink" class="userLink"></h4>
+                <p id="repoList" class="repoList"></p>
+            </div>     
+            <br style="clear:both">          
+            <hr>
+        </div>
+    </body>
+</html>
