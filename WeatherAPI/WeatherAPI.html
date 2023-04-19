@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <title>United States Weather Forecast</title>
+    <head>
+        <link rel="stylesheet" href="Style.css" >
+        <script src="WeatherAPI.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>United States Weather Forecast</h2>
+            <hr>
+            <!-- The user should be allowed to enter which weather service offices from which to get the forecast. 
+                The user should then be presented with the extended forecast for that office in a clean format.
+                If the user enters an incorrect office, a message should be provide to the user reflecting that. -->
+            <div id="search">
+                <form >
+                    <label for="txtLocation" >Location:</label>
+                    <input type="text" id="txtLocation">
+                    <input type="button" value="Search" class="submit-button" onclick="SearchLocation()" >
+                </form>
+                <p id="locationList" class="locationList"></p>
+            </div>   
+            <h3 id="selectedOffice"></h3>
+            <div id="forecast">
+                <br>
+                <br>
+                <p id="days"></p>
+                <p id="weather"></p>
+                <p id="temp"></p>
+            </div>
+        </div>
+    </body>
+</html>
