@@ -1,41 +1,39 @@
 var rowData = [];
 var closeValue = "";
 var day = "";
-var chartList = [];
 
-async function getStockInfo(freshData){  
+async function getStockInfo(){  
 
-    if (!freshData && localStorage.getItem('apiData') != null){
-        rowData = JSON.parse(localStorage.getItem('apiData'));
-        graphData();
-        return true;
-    }
-    else {
-        rowData = [];
-    }
-    // https://positionstack.com/dashboard
+    rowData = [];
+
     var superSecureAccessKeyEncyrption = "806KLIJWO0OLM0DN";
     var stockSymbol = document.getElementById("txtSymbol").value;
+
+    if (stockSymbol.length == 0){
+        alert("Please enter a stock symbol.");
+        return true;
+    }
     var interval = document.getElementById("ddlInterval").options[document.getElementById("ddlInterval").selectedIndex].value;
-    var apiString = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&outputsize=full&symbol=" + stockSymbol + "&interval=" + interval + "min&apikey=" + superSecureAccessKeyEncyrption;
+    var apiString = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&outputsize=full&adjusted=false&symbol=" + stockSymbol + "&interval=" + interval + "min&apikey=" + superSecureAccessKeyEncyrption;
   
     var response = await fetch(apiString);
 
     if (response.status >= 200 && response.status  < 300){
         var jsonData = await response.json();
+        // If entered stock is not found, response is 200 code with error message. 
         if (jsonData['Error Message'] != undefined && jsonData['Error Message'].length > 0){
             alert('The symbol entered is not recognized as a valid stock.');
             return true;
         }
 
-
         for (row in jsonData['Time Series (' + interval + 'min)']){
             closeValue = jsonData['Time Series (' + interval + 'min)'][row]['4. close'];
-            day = moment(row).format('MM/DD/YYYY');
+            day = moment(row).format(' M/DD/YY h:mm A');
             rowData.push({"Close": closeValue, "Date": day});
         }
 
-        localStorage.setItem('apiData',JSON.stringify(rowData));
+        // Data is delivered date desc from API. Reverse array before graphing for left-to-right reading.
+        rowData = rowData.reverse();
         graphData();
     }
     else {
@@ -45,33 +43,57 @@ async function getStockInfo(freshData){
 }
 
 function graphData(){
-    //stockSymbol + ': ' + jsonData['Meta Data']['1. Information']
-
+    // Clear all chart instances to display new chart
     for (chart in Chart.instances){
         Chart.instances[chart].destroy();
     } 
-    // window.Chart.destroy();
     new Chart(document.getElementById('stockChart'), {
         type: 'line',
         data: {
             labels: rowData.map(row => row.Date),
             datasets: [{
-            label: 'USD',
-            data: rowData.map(row => row.Close),
-            // borderWidth: 1
-            pointStyle: false,
+                label: 'USD',
+                data: rowData.map(row => row.Close),
+                pointStyle: false,
             }]
         },
         options: {
-            scales: {
-            y: {
-                beginAtZero: true
-            },
-            xAxis: {
-                ticks: {
-                    maxTicksLimit:5,
+            plugins: {
+                zoom: {
+                    pan: {
+                        enabled: true,
+                        scaleMode: 'xy',
+                    },
+                    zoom: {
+                        wheel: {
+                            enabled: true,
+                        },
+                        pinch: {
+                            enabled: true
+                        },
+                        mode: 'xy',
+                        scaleMode: 'xy'
+                    }
                 }
-            }
+            },
+            scales: {
+                y: {
+                    beginAtZero: false,
+                    ticks: {
+                        callback: function(value) {
+                            return '$' + Math.floor(value*100)/100;
+                        },
+                        maxTicksLimit: 6.1,
+                    }
+                },
+                x: {
+                    ticks: {
+                        major: {
+                            enabled: true
+                        },
+                        maxTicksLimit: 6.1,
+                    }
+                }
             },
             legend: {
                 labels: {
@@ -83,5 +105,12 @@ function graphData(){
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-    getStockInfo()
+    // getStockInfo()
+    document.getElementById('txtSymbol').focus();
+    document.getElementById('txtSymbol').addEventListener("keypress", function(e){
+        if (e.key === "Enter"){
+            getStockInfo();
+        }
+    });
 });
+

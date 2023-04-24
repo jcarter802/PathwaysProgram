@@ -1,208 +1,37 @@
 label {
-    color:lightblue;
+    color: #78a8f0;
     font-weight: bold;
+    font-size: 1.125rem;
 }
 
 input[type=text]{
-  width: 5rem
+  width: 5rem;
+  padding-left: 0.5rem;
 }
 
-h1 {
-  color: white;
-  margin-right: 20px;
+.apiInfo {
+  font-size: 0.65rem;
   text-align: center;
-} 
-
-input[type=number]{
-  width: 3rem;
 }
 
-a, p {color: white;}
+.fixed-row-bottom {
+  position: fixed;
+  bottom: 0;
+}
 
-input {
+input, select {
   line-height: 10px !important;
+  border-radius: 5px;
 }
 
-#selectedOffice {
-  text-align: center;
-  padding: 1rem 0.625rem;
-}
-
-h1, h3 {
-  color: lightblue;
-}
-
-#search {
-  float: left;
-  width: 30%;
-}
-
-#forecast{
-  float: right;
-  width: 65%;
-  display: flex;
-}
-
-#locationList {
-  padding-left: 30px;
-}
-
-a {
+.submit-button {
+  padding: 0.60rem;
+  background: #78a8f0;
+  border-radius: 5px;
+  border-style:solid;
   cursor: pointer;
-  text-decoration: underline;
 }
 
-
-form {
-    background: var(--color-darkblue-alpha);
-    padding: 1rem 0.625rem;
-    border-radius: 0.25rem;
-    display: flex;
-    text-align: center;
-  }
-
-  .userLink > a{
-    color: white;
-  }
-
-  .repoList > p > a, .repoList{
-    color: lightgreen;
-  }
-  
-  .input-radio,
-  .input-checkbox {
-    display: inline-block;
-    margin-right: 0.625rem;
-    min-height: 1.25rem;
-    min-width: 1.25rem;
-  }
-
-  table {
-    background-color: white;
-    min-height: 14.5rem;
-    min-width: 2rem;
-    /* height: 8.5rem;
-    width: 50%;
-    min-width: 80%;
-    padding: 0.625rem;
-    margin-left: 3rem; */
-  }
-  
-  .input-textarea {
-
-    resize: vertical;
-  }
-
-  .clear-button {
-    display: block;
-    width: 8rem;
-    padding: 0.75rem;
-    background: pink;
-    color: black;
-    border-radius: 5px;
-    border-style:solid;
-    cursor: pointer;
-  }
-  
-  .submit-button {
-    padding: 0.60rem;
-    background: lightblue;
-    color: black;
-    border-radius: 5px;
-    border-style:solid;
-    cursor: pointer;
-  }
-
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
-    margin: 0;
-    background-color: black;
-  }
-  
-  h1 {
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  
-  p {
-    font-size: 1.125rem;
-  }
-  
-  h1,
-  p {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-  }
-
-  .ReqStyle {
-    color: red;
-    font-weight: bold;
-  }
-  
-  label {
-    display: flex;
-    align-items: center;
-    font-size: 1.125rem;
-    /* margin-bottom: 0.5rem; */
-  }
-  
-  input,
-  button,
-  select,
-  textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-  }
-  
-  button {
-    border: 1.125rem;
-  }
-  
-  .container {
-    width: 90%;
-    margin: 3.125rem auto 0 auto;
-  }
-  
-  .header {
-    padding: 0 0.625rem;
-    margin-bottom: 1.875rem;
-  }
-
-  .cblPets {
-    display: none;
-  }
-
-  @media screen and (max-width: 1400px) {
-    #search {
-      width: 100%;
-      float: none;
-    }
-
-    #selectedOffice {
-      text-align: left;
-    }
-    
-    #forecast{
-      border-width: medium;
-      border-color: white;
-      border-top-style: solid;
-      padding-top: 30px;
-      width: 100%;
-      float: none;
-      margin-top: 30px;
-    }
-
-    .container {
-      width: 90%
-    }
-  
-    h1 {
-      text-align: left;
-    }
-
-  }
+p {
+  font-size: 1.125rem;
+}

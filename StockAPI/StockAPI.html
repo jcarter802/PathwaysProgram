@@ -10,6 +10,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>        
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+        <!-- chart js zoom & pan plugin: https://www.chartjs.org/chartjs-plugin-zoom/latest/guide/options.html -->
+        <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+        <script src="../../node_modules/chartjs-plugin-zoom/dist/chartjs-plugin-zoom.min.js"></script>
 
     </head>
     <!-- The user should be allowed to enter which stock ticker to view data for.
@@ -21,31 +24,33 @@
             <h1>Stock Symbol Lookup</h1>
             <p>Search for any stock by symbol to view the last 1-2 months of data.</p> 
           </div>
-        <div class="container mt-5">
+        <div class="mt-5 container-lg">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-lg-4 col-md-12">
                     <label for="txtSymbol" >Stock Symbol:</label>
-                    <input type="text" id="txtSymbol">
+                    <input type="text" id="txtSymbol" maxlength="5" >
                     <br>
                     <br>
                     <label for="ddlInterval">Interval (In Minutes):</label>
                     <select id="ddlInterval" >
                         <option value="1">1</option>
                         <option value="5">5</option>
-                        <option value="15" selected>15</option>
-                        <option value="30">30</option>
+                        <option value="15">15</option>
+                        <option value="30" selected>30</option>
                         <option value="60">60</option>
                     </select>
                     <br>
                     <br>
-                    <input type="button" value="Search" class="submit-button" onclick="getStockInfo(true)" >
+                    <input type="submit" value="Search" class="submit-button" onclick="getStockInfo()" >
                 </div>
-                <div class="col-sm-8">
+                <div class="col-lg-8 col-md-12">
                     <label for="txtStockName" >Stock History:</label>
                     <br>
                     <canvas id="stockChart"></canvas>
                 </div>
-
+            </div>
+            <div class="row fixed-row-bottom">
+                <p class="apiInfo">This website displays intraday time series of the equity specified, covering extended trading hours where applicable (e.g., 4:00am to 8:00pm Eastern Time for the US market). The intraday data is derived from the Securities Information Processor (SIP) market-aggregated data.</p>
             </div>
         </div>
     </body>
