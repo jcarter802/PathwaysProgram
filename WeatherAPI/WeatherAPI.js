@@ -1,4 +1,5 @@
 async function SearchLocation(){
+    // https://positionstack.com/dashboard
     var superSecureAccessKeyEncyrption = "a39f8538cebbf48e520452f55ab24229";
     var apiString = "http://api.positionstack.com/v1/forward?access_key=" + superSecureAccessKeyEncyrption + "&country=US&query="
     var locationSearch = document.getElementById("txtLocation").value;
