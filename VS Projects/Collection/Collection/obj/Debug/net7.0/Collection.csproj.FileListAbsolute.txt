@@ -1,0 +1,15 @@
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\bin\Debug\net7.0\Collection.exe
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\bin\Debug\net7.0\Collection.deps.json
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\bin\Debug\net7.0\Collection.runtimeconfig.json
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\bin\Debug\net7.0\Collection.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\bin\Debug\net7.0\Collection.pdb
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\obj\Debug\net7.0\Collection.csproj.AssemblyReference.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\obj\Debug\net7.0\Collection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\obj\Debug\net7.0\Collection.AssemblyInfoInputs.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\obj\Debug\net7.0\Collection.AssemblyInfo.cs
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\obj\Debug\net7.0\Collection.csproj.CoreCompileInputs.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\obj\Debug\net7.0\Collection.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\obj\Debug\net7.0\refint\Collection.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\obj\Debug\net7.0\Collection.pdb
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\obj\Debug\net7.0\Collection.genruntimeconfig.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Collection\Collection\obj\Debug\net7.0\ref\Collection.dll
