@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace Calculator
+namespace Calculator.Models
 {
-    class Calculator
+    class CalculatorModel
     {
         private double numOne;
         private double numTwo;
 
-        public Calculator()
+        public CalculatorModel()
         {
             numOne = 0;
             numTwo = 0;
@@ -52,5 +52,5 @@ namespace Calculator
 
             return answer;
         }
-    }        
+    }
 }

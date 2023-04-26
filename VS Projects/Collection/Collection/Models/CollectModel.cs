@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Collection
+namespace Collection.Models
 {
-    internal class Collector
+    internal class CollectModel
     {
-
         private List<string> itemList = new List<string>();
 
-        public Collector()
+        public void Collector()
         {
             itemList = new List<string>();
         }
