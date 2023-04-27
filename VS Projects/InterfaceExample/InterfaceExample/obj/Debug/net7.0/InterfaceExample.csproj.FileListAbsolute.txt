@@ -1,0 +1,15 @@
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\bin\Debug\net7.0\InterfaceExample.exe
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\bin\Debug\net7.0\InterfaceExample.deps.json
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\bin\Debug\net7.0\InterfaceExample.runtimeconfig.json
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\bin\Debug\net7.0\InterfaceExample.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\bin\Debug\net7.0\InterfaceExample.pdb
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\obj\Debug\net7.0\InterfaceExample.csproj.AssemblyReference.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\obj\Debug\net7.0\InterfaceExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\obj\Debug\net7.0\InterfaceExample.AssemblyInfoInputs.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\obj\Debug\net7.0\InterfaceExample.AssemblyInfo.cs
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\obj\Debug\net7.0\InterfaceExample.csproj.CoreCompileInputs.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\obj\Debug\net7.0\InterfaceExample.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\obj\Debug\net7.0\refint\InterfaceExample.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\obj\Debug\net7.0\InterfaceExample.pdb
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\obj\Debug\net7.0\InterfaceExample.genruntimeconfig.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\InterfaceExample\InterfaceExample\obj\Debug\net7.0\ref\InterfaceExample.dll

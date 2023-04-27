@@ -10,10 +10,16 @@ namespace Collection.Collectors
 {
     internal class CollectController
     {
-        CollectView myView = new CollectView();
-        CollectModel myModel = new CollectModel();
+        private CollectView myView;
+        private CollectModel myModel;
 
         public CollectController()
+        {
+            myView = new CollectView();
+            myModel = new CollectModel();
+        }
+
+        public void LaunchConsole()
         {
 
             bool endApp = false;
@@ -49,7 +55,7 @@ namespace Collection.Collectors
                                 myView.WritePrompt("\nThis is not valid index. Please enter an index of an item in the current list: ");
                                 PrintList();
                                 myView.WritePrompt("\nEnter the index of the item you wish to delete from the to-do list: ");
-                                input = Console.ReadLine();
+                                input = myView.GetInput();
                             }
                             myModel.DeleteItem(int.Parse(input));
                         }
@@ -72,6 +78,7 @@ namespace Collection.Collectors
                 PrintList();
             }
         }
+
         private void PrintList()
         {
             myView.WritePrompt("\n------------------------\nCurrent List:\n");
@@ -82,7 +89,6 @@ namespace Collection.Collectors
                 myView.WritePrompt("\n\t" + index.ToString() + ": " + item);
                 index++;
             }
-
             myView.WritePrompt("\n------------------------");
         }
     }

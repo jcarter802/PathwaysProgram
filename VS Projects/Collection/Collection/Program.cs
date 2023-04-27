@@ -8,6 +8,7 @@ namespace Collection
         static void Main(string[] args)
         {
             CollectController myController = new CollectController();
+            myController.LaunchConsole();
             return;
         }
     }
