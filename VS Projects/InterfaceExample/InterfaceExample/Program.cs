@@ -11,7 +11,7 @@ namespace InterfaceExample
         void PrintVehicleData();
     }
 
-    public interface IMuscleCar
+    public interface IponyCar
     {
         void PrintVehicleData();
     }
@@ -21,14 +21,17 @@ namespace InterfaceExample
         int id;
         string make;
         string model;
-        List<string> features;
+        List<string>? features;
 
-        public VehicleInfo(int newID, string newMake, string newModel, List<string> newFeatures = null)
+        public VehicleInfo(int newID, string newMake, string newModel, List<string>? newFeatures)
         {
             id = newID;
             make = newMake;
             model = newModel;
-            features = newFeatures;
+            if (newFeatures != null)
+            {
+                features = newFeatures;
+            }
         }
 
         public int ID    // property
@@ -58,24 +61,28 @@ namespace InterfaceExample
         public override string ToString()
         {
             string stringOfFeatures = string.Empty;
-            for (int i = 0; i < features.Count; i++)
+            if (features != null)
             {
-                stringOfFeatures += features[i];
-                if (i != features.Count - 1)
+                stringOfFeatures = ", Features: ";
+                for (int i = 0; i < features.Count; i++)
                 {
-                    stringOfFeatures += ", ";
+                    stringOfFeatures += features[i];
+                    if (i != features.Count - 1)
+                    {
+                        stringOfFeatures += ", ";
+                    }
                 }
             }
-            return "ID: " + ID.ToString() + ", Make: " + Make.ToString() + ", Model: " + Model + ", Features: " + stringOfFeatures;
+            return "ID: " + ID.ToString() + ", Make: " + Make.ToString() + ", Model: " + Model + stringOfFeatures;
         }
 
     }
 
-    public class Vehicle : IRoadster, IMuscleCar, ISportsBike
+    public class Vehicle : IRoadster, IponyCar, ISportsBike
     {
         private VehicleInfo theVehicle;
 
-        public Vehicle(int newID, string newMake, string newModel, List<string> newFeatures)
+        public Vehicle(int newID, string newMake, string newModel, List<string>? newFeatures = null)
         {
             theVehicle = new VehicleInfo(newID, newMake, newModel, newFeatures);
         }
@@ -83,24 +90,19 @@ namespace InterfaceExample
 
         void ISportsBike.PrintVehicleData()
         {
-            Console.WriteLine("Sports Bike Details: " + theVehicle.Make);
+            Console.WriteLine("Sports Bike Manufacturer: " + theVehicle.Make);
         }
 
         void IRoadster.PrintVehicleData()
         {
-            Console.WriteLine("Roadster Details: " + theVehicle.Make);
+            Console.WriteLine("Roadster Manufacturer: " + theVehicle.Make);
         }
 
-        void IMuscleCar.PrintVehicleData()
+        void IponyCar.PrintVehicleData()
         {
-            Console.WriteLine("Muscle Car Details: " + theVehicle.Make);
+            Console.WriteLine("Pony Car Manufacturer: " + theVehicle.Make);
         }
 
-
-        public void PrintAccountData()
-        {
-            Console.WriteLine("Basic account balance: " + theVehicle.Make);
-        }
 
         public override string ToString()
         {
@@ -113,18 +115,16 @@ namespace InterfaceExample
     {
         static void Main(string[] args)
         {
-            List<string> sportsBikeFeatures = new List<string>{ "8,800 RPM Redline" };
+            List<string> sportsBikeFeatures = new List<string>{ "8,800 RPM Redline", "Aluminum Frame", "V4 Engine" };
             List<string> roadsterFeatures = new List<string> { "Convertible", "Rear-Wheel Drive", "Manual Transmission"};
-            List<string> muscleCarFeatures = new List<string> { "335 Horsepower" };
+            //List<string> ponyCarFeatures = new List<string> { "HEMI Engine", "335 Horsepower" };
             ISportsBike sportsBike = new Vehicle(1, "Ducati", "Diavel", sportsBikeFeatures);
             IRoadster roadster = new Vehicle(2, "Mazda", "MX-5 Miata", roadsterFeatures);
-            IMuscleCar muscleCar = new Vehicle(3, "Plymouth", "Barracuda", muscleCarFeatures);
-            //Account myAccount = new Account(4, 1.23, "Elle");
+            IponyCar ponyCar = new Vehicle(3, "Plymouth", "Barracuda");
             sportsBike.PrintVehicleData();
             roadster.PrintVehicleData();
-            muscleCar.PrintVehicleData();
-            //myAccount.PrintAccountData();
-            Console.WriteLine("Sports Bike: " + sportsBike + "\nRoadster: " + roadster + "\nMuscle Car: " + muscleCar);// + "\nMy account: " + myAccount);
+            ponyCar.PrintVehicleData();
+            Console.WriteLine("Sports Bike: " + sportsBike + "\nRoadster: " + roadster + "\nPony Car: " + ponyCar);
             Console.ReadLine();
         }
     }
