@@ -1,0 +1,15 @@
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\bin\Debug\net7.0\MontyPython.exe
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\bin\Debug\net7.0\MontyPython.deps.json
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\bin\Debug\net7.0\MontyPython.runtimeconfig.json
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\bin\Debug\net7.0\MontyPython.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\bin\Debug\net7.0\MontyPython.pdb
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\obj\Debug\net7.0\MontyPython.csproj.AssemblyReference.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\obj\Debug\net7.0\MontyPython.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\obj\Debug\net7.0\MontyPython.AssemblyInfoInputs.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\obj\Debug\net7.0\MontyPython.AssemblyInfo.cs
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\obj\Debug\net7.0\MontyPython.csproj.CoreCompileInputs.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\obj\Debug\net7.0\MontyPython.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\obj\Debug\net7.0\refint\MontyPython.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\obj\Debug\net7.0\MontyPython.pdb
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\obj\Debug\net7.0\MontyPython.genruntimeconfig.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Week3CompetencyChallenge\InterfaceExample\obj\Debug\net7.0\ref\MontyPython.dll
