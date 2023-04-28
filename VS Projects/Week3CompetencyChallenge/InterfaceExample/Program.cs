@@ -6,13 +6,14 @@ namespace MontyPython
     {
         static void Main(string[] args)
         {
-
-            IAirspeed swallow = new Swallow();
-            AirspeedService airspeedServiceSwallow = new AirspeedService(swallow);
-            Console.WriteLine(airspeedServiceSwallow.DetermineSpeed(true) + "\n");
-            Console.WriteLine(airspeedServiceSwallow.DetermineSpeed(false, 2.3) + "\n");
-            Console.WriteLine(airspeedServiceSwallow.DetermineSpeed(false, 5.5) + "\n");
-            Console.WriteLine(airspeedServiceSwallow.DetermineSpeed(false) + "\n");
+            IAirspeed bird = new Robin();
+            AirspeedService airspeedServiceBirdOne = new AirspeedService(bird);
+            Console.WriteLine(airspeedServiceBirdOne.DetermineSpeed(true) + "\n");
+            bird = new Swallow();
+            AirspeedService airspeedServiceBirdTwo = new AirspeedService(bird);
+            Console.WriteLine(airspeedServiceBirdTwo.DetermineSpeed(false, 2.3) + "\n");
+            //Console.WriteLine(airspeedServiceBird.DetermineSpeed(false, 5.5) + "\n");
+            //Console.WriteLine(airspeedServiceBird.DetermineSpeed(false) + "\n");
             Console.ReadLine();
         }
     }

@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MontyPython
-{
-    //  Changed from internal class to public to be accessible by test project
+{ 
     public class Swallow : IAirspeed
     {
 

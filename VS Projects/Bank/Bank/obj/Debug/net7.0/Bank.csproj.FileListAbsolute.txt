@@ -1,0 +1,15 @@
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\bin\Debug\net7.0\Bank.exe
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\bin\Debug\net7.0\Bank.deps.json
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\bin\Debug\net7.0\Bank.runtimeconfig.json
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\bin\Debug\net7.0\Bank.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\bin\Debug\net7.0\Bank.pdb
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\obj\Debug\net7.0\Bank.csproj.AssemblyReference.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\obj\Debug\net7.0\Bank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\obj\Debug\net7.0\Bank.AssemblyInfoInputs.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\obj\Debug\net7.0\Bank.AssemblyInfo.cs
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\obj\Debug\net7.0\Bank.csproj.CoreCompileInputs.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\obj\Debug\net7.0\Bank.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\obj\Debug\net7.0\refint\Bank.dll
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\obj\Debug\net7.0\Bank.pdb
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\obj\Debug\net7.0\Bank.genruntimeconfig.cache
+C:\Users\dpdjmc\DPL\Pathways Program\VS Projects\Bank\Bank\obj\Debug\net7.0\ref\Bank.dll
