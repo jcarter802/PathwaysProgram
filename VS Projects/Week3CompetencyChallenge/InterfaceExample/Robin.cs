@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MontyPython
 {
-    internal class Robin : IAirspeed
+    public class Robin : IAirspeed
     {
         BirdData bird = new BirdData(7, 12.5);
 

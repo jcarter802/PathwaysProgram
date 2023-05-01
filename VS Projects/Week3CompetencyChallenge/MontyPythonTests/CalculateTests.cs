@@ -5,6 +5,8 @@ namespace MontyPythonTests
     [TestClass]
     public class CalculateTests
     {
+        // First 3 tests cover the possible calculation return cases
+        // The last 4 tests the implementation of the airspeed interface, through the calling of the calculate class, to the string returned by the implementation.
         [TestMethod]
         public void CalculateAirspeed_LadenMaxWeightExceeded_ReturnCorrectCase()
         {
@@ -50,7 +52,7 @@ namespace MontyPythonTests
         }
 
         [TestMethod]
-        public void AirSpeedService_UnladenSwallow_ReturnString()
+        public void AirSpeedService_UnladenSwallow_ReturnCorrectString()
         {
             //Arrange
             IAirspeed swallow = new Swallow();
@@ -63,7 +65,7 @@ namespace MontyPythonTests
         }
 
         [TestMethod]
-        public void CalculateAirspeed_MaxWeightLaden_ReturnCorrectCase()
+        public void AirSpeedService_LadenNoWeightProvided_ReturnCorrectString()
         {
             //Arrange
             IAirspeed seagull = new Seagull();
@@ -71,6 +73,33 @@ namespace MontyPythonTests
             string expectedResponse = "A valid weight was not provided, so assuming the object is a 1 pound coconut, the velocity of the laden seagull is 31.333 mph.";
             //Act
             string response = airspeedServiceSwallow.DetermineSpeed(false);
+            //Assert
+            Assert.AreEqual(response, expectedResponse);
+        }
+
+
+        [TestMethod]
+        public void AirSpeedService_LadenWeightProvided_ReturnCorrectString()
+        {
+            //Arrange
+            IAirspeed eagle = new Eagle();
+            AirspeedService airspeedServiceSwallow = new AirspeedService(eagle);
+            string expectedResponse = "The velocity of an eagle laden with a 17 pound object is 68.331 mph.";
+            //Act
+            string response = airspeedServiceSwallow.DetermineSpeed(false, 17);
+            //Assert
+            Assert.AreEqual(response, expectedResponse);
+        }
+
+        [TestMethod]
+        public void AirSpeedService_LadenMaxWeightExceeded_ReturnCorrectString()
+        {
+            //Arrange
+            IAirspeed robin = new Robin();
+            AirspeedService airspeedServiceRobin = new AirspeedService(robin);
+            string expectedResponse = "Are you out of your mind?! A 20 pound object would take at least TWO robins to carry!";
+            //Act
+            string response = airspeedServiceRobin.DetermineSpeed(false, 20);
             //Assert
             Assert.AreEqual(response, expectedResponse);
         }
