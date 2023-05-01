@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MontyPython
-{
-    internal class Robin : IAirspeed
+{ 
+    public class Eagle : IAirspeed
     {
-        BirdData bird = new BirdData(7, 12.5);
 
+        BirdData bird = new BirdData(55, 98.9);
+        
         public string DetermineSpeed(bool unladen, double objectWeight)
         {
             // Create class object of bird's details
@@ -17,7 +18,7 @@ namespace MontyPython
             string answer = "";
             if (unladen)
             {
-                answer = "Airspeed of an unladen {0} is {3} mph.";
+                answer = "Airspeed velocity of an unladen {0} is {3} mph.";
             }
             else
             {
@@ -26,7 +27,7 @@ namespace MontyPython
                 switch (calculations[0])
                 {
                     case 1:
-                        answer = "The speed/velocity of a {0} laden with a {1} pound object is {2} mph.";
+                        answer = "The velocity of an {0} laden with a {1} pound object is {2} mph.";
                         break;
                     case 2:
                         answer = "Are you out of your mind?! A {1} pound object would take at least TWO {0}s to carry!";
@@ -38,8 +39,8 @@ namespace MontyPython
                         break;
                 }
             }
-            answer = string.Format(answer, "robin", objectWeight.ToString(), airspeed, bird.USpeed);
-            return (answer);
+            answer = string.Format(answer, "eagle", objectWeight.ToString(), airspeed, bird.USpeed);
+            return(answer);
         }
     }
 }

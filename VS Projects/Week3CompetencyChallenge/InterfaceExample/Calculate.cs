@@ -8,11 +8,14 @@ namespace MontyPython
 {
     public class Calculate
     {
-        public static double[] CalculateAirspeed(double airspeed, double maxWeight, double objectWeight)
+        public static double[] CalculateAirspeed(BirdData bird, double objectWeight)
         {
+            double maxWeight = bird.MaxWeight;
+            double airspeed = bird.USpeed;
+
             double[] response = new double[2];
 
-            if (objectWeight > maxWeight)
+            if (objectWeight >= maxWeight)
             {
                 response[0] = 2;
                 airspeed = 0;
