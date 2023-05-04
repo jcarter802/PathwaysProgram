@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\dpdjmc\\DPL\\Pathways Program\\VS Projects\\JournalAPI\\JournalAPI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\dpdjmc\\DPL\\Pathways Program\\VS Projects\\JournalAPI\\JournalAPI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\dpdjmc\\DPL\\Pathways Program\\VS Projects\\JournalAPI\\JournalAPI\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.JournalAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.JournalAPI.props",
+      "PackagePath": "build\\JournalAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.JournalAPI.props",
+      "PackagePath": "buildMultiTargeting\\JournalAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.JournalAPI.props",
+      "PackagePath": "buildTransitive\\JournalAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

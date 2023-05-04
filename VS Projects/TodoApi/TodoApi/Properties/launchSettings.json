@@ -1,0 +1,41 @@
+﻿//{
+//  "$schema": "https://json.schemastore.org/launchsettings.json",
+//  "iisSettings": {
+//    "windowsAuthentication": false,
+//    "anonymousAuthentication": true,
+//    "iisExpress": {
+//      "applicationUrl": "http://localhost:3009"
+//      //"sslPort": 44340
+//    }
+//  },
+//  "profiles": {
+//    "http": {
+//      "commandName": "Project",
+//      "dotnetRunMessages": true,
+//      //"launchBrowser": true,
+//      //"launchUrl": "api/todoitems",
+//      "applicationUrl": "http://localhost:3009",
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Development"
+//      }
+//    },
+//    "https": {
+//      "commandName": "Project",
+//      "dotnetRunMessages": true,
+//      //"launchBrowser": true,
+//      //"launchUrl": "api/todoitems",
+//      "applicationUrl": "https://localhost:3009",
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Development"
+//      }
+//    }
+//  }
+//}
+{
+  "profiles": {
+    "browser": {
+      "commandName": "Project",
+      "launchBrowser": true
+    }
+  }
+}

@@ -9,7 +9,7 @@ namespace MontyPython
     public class Bluejay : IAirspeed
     {
 
-        BirdData bird = new BirdData(8, 25.3);
+        readonly BirdData bird = new BirdData(8, 25.3);
         
         public string DetermineSpeed(bool unladen, double objectWeight)
         {

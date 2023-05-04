@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Journal CRUD</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</head>
+<body>
+    <h1>Journal CRUD</h1>
+    <h3>Manage Journal Entries</h3>
+    <form action="javascript:void(0);" onsubmit="addItem()">
+        <input type="hidden" id="hfId">
+        <label for="txtEntry">Journal Entry</label>
+        <br />
+        <textarea id="txtEntry" placeholder="New Journal Entry" rows="3" cols="40"></textarea>
+        <br />
+        <label for="ddlEmotion">Emotional State (Optional)</label>
+        <br />
+        <select id="ddlEmotion">
+            <option value="" selected>
+                - Select
+            </option>
+            <option value="Happy">
+                Happy
+            </option>
+            <option value="Neutral">
+                Neutral
+            </option>
+            <option value="Sad">
+                Sad
+            </option>
+            <option value="Angry">
+                Angry
+            </option>
+        </select>
+        <br />
+        <br />
+        <input id="btnAdd" type="submit" value="Add">
+        <div id="editBtns" style="display:none">
+            <input id="btnUpdate" type="button" value="Update" onclick="updateItem()">
+            <input id="btnCancel" type="button" value="Cancel" onclick="clearEdit()">
+        </div>
+    </form>
+
+    <br />
+    <div id="editBtns" style="display:inline-block">
+        <label>Filter By:</label>&nbsp;
+        Emotion
+        <select id="ddlSearchEmotion" onchange="getItems()">
+            <option value="" selected>
+                - All Emotions
+            </option>
+            <option value="Happy">
+                Happy
+            </option>
+            <option value="Neutral">
+                Neutral
+            </option>
+            <option value="Sad">
+                Sad
+            </option>
+            <option value="Angry">
+                Angry
+            </option>
+        </select>
+        &nbsp;And/Or Date
+        <input type="date" id="txtSearchDate" onchange="getItems()" />
+    </div>
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Journal Entry</th>
+            <th>Emotion</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tbody id="journalEntries"></tbody>
+    </table>
+
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getItems();
+    </script>
+</body>
+</html>

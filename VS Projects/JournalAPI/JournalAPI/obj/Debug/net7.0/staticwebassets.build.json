@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "oNZOe/ifIjgmGMHIjpi5BOFWZ23moYLaI9jV006yNjg=",
+  "Source": "JournalAPI",
+  "BasePath": "_content/JournalAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "JournalAPI\\wwwroot",
+      "Source": "JournalAPI",
+      "ContentRoot": "C:\\Users\\dpdjmc\\DPL\\Pathways Program\\VS Projects\\JournalAPI\\JournalAPI\\wwwroot\\",
+      "BasePath": "_content/JournalAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\dpdjmc\\DPL\\Pathways Program\\VS Projects\\JournalAPI\\JournalAPI\\wwwroot\\css\\site.css",
+      "SourceId": "JournalAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dpdjmc\\DPL\\Pathways Program\\VS Projects\\JournalAPI\\JournalAPI\\wwwroot\\",
+      "BasePath": "_content/JournalAPI",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\dpdjmc\\DPL\\Pathways Program\\VS Projects\\JournalAPI\\JournalAPI\\wwwroot\\index.html",
+      "SourceId": "JournalAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dpdjmc\\DPL\\Pathways Program\\VS Projects\\JournalAPI\\JournalAPI\\wwwroot\\",
+      "BasePath": "_content/JournalAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\dpdjmc\\DPL\\Pathways Program\\VS Projects\\JournalAPI\\JournalAPI\\wwwroot\\js\\site.js",
+      "SourceId": "JournalAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dpdjmc\\DPL\\Pathways Program\\VS Projects\\JournalAPI\\JournalAPI\\wwwroot\\",
+      "BasePath": "_content/JournalAPI",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}
